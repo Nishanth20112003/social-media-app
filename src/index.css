@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  background: rgba(0, 0, 0, 0.945);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.tint{
+  background: rgba(0, 0, 0, 0.082);
+}
+@media (max-width:1110px) {
+  .sidebar{
+    left: 20px;
+  }
+  .sidebar-btn{
+    left: 20px;
+  }
+}
+@media (max-width:500px) {
+  .story{
+    width: 60px;
+  }
+}
+@media(max-width:437px){
+  .story{
+    width: 50px;
+  }
+}
+.name-input, .password-input{
+  background-color: rgba(175, 175, 175, 0.062);
+
+}
+@media (max-width:380px) {
+  .form-container{
+    padding: 10px;
+    width: 340px;
+    /* border: 1px solid white; */
+    margin-top: 100px;
+    /* background-color: rgb(29, 33, 70); */
+    /* border: none; */
+  }
+  .password-input{
+    /* border: 1px solid gray; */
+    border-radius: 14px;
+    background-color: rgba(175, 175, 175, 0.062);
+  }
+  .password-input:focus{
+    border: 1px solid royalblue;
+  }
+  .name-input:focus{
+    border: 1px solid royalblue;
+  }
+  .name-input{
+    /* border: 1px solid gray; */
+    border-radius: 14px;
+    background-color: rgba(175, 175, 175, 0.062);
+    
+  }
+}
+
+.input{
+  background-color: rgba(175, 175, 175, 0.062);
+}
+.input:focus{
+  border: 1px solid gray;
+}
+@media (max-width:640px) {
+  .sign-up-header{
+    display: block;
+  }
+  .first-name, .last-name{
+    width: 100%;
+  }
+  .first-name{
+    margin-bottom: 15px;
+  }
+  .navbar{
+    /* border: 1px solid white; */
+    position: fixed;
+  }
+  .menu-bar{
+    position: fixed;
+  }
+  .message-box{
+    position: fixed ;
+  }
+}
+@media (max-width:495px) {
+  .input{
+    width: 90%;
+    display: block;
+    border : 1px solid rgba(128, 128, 128, 0.212);
+    border-radius: 14px;
+    background: transparent;
+    margin: 0px auto;
+    margin-bottom: 10px;
+  }
+  .sign-up-login-btn, .sign-up-btn{
+    border-radius: 50px;
+  }
+  
+  .sign-up-form-container{
+    text-align: center;
+    width: 90%;
+    /* border: 1px solid white; */
+    margin-top: 10px;
+  }
+}
+@media (max-width: 1025px) {
+  .menu-icon{
+    display: block;
+  }
+  .profile-pic{
+    display: none;
+  }
+  
+}
+@media (min-width:1026px) {
+  .menu-icon{
+    display: none;
+  }
+}
+@media (min-width: 1025px  ) {
+  .menu-bar{
+    display: none;
+  }
+}
+@media (max-width:639px) {
+  .feed-container{
+    width: 490px;
+    margin-top: -20px;
+  }
+}
+@media (max-width:503px) {
+  .feed-container{
+    width: 437px;
+    margin-top: -30px;
+    
+  }
+}
+@media (max-width:441px) {
+  .feed-container{
+    width: 377px;
+    margin-top: -50px;
+  }
+}
+@media(min-wdith:640px){
+  .search-list{
+    display: block;
+  }
+}
+@media(max-width:550px){
+  .search-bar{
+    width: 200px;
+  }
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5px;
+  }
+  .logo{
+  font-size: 20px;
+  }
+}
+@media(min-width:640px){
+  .message-box{
+      position: fixed;
+    }
+}
+.input-file::-webkit-file-upload-button {
+  background-color: rgb(20, 74, 235);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 40px;
+  padding: 3px 10px;
+  font-weight: 600;
+}
+.input-file::-webkit-file-upload-button:hover{
+  background-color: rgb(20, 43, 110);
+}
+.post-btn:hover{
+  background-color: rgb(211, 34, 64);
+}
+@media(min-width:639px){
+  .create-post-button{
+    display: none;
+  }
+}
+@media(max-width:573px){
+  .post-page{
+    text-align: center;
+    width: 85%;
+    
+  }
+  .container-one, .post-footer{
+    display: block;
+  }
+  .input-title, .input-location, .caption{
+    width: 80%;
+  }
+  .post-btn{
+  width: 60%;
+  }
+}
